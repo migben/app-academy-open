@@ -7,7 +7,7 @@ def format_name(str)
   
   
   fullName.each {|part|
-  	fixed_case << part.downcase.capitalize()
+  	fixed_case << part.downcase.capitalize() # or this, part[0].upcase + part[1..-1].downcase
   }
   
   fixed_case.join(" ")
